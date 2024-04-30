@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#contenedor {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dispositivos {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1; /* Para que los botones estén encima de la imagen */
+}
+
+button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#imagenFocoOff {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: -50px; /* Ajusta la distancia desde el margen izquierdo */
+    transform: translateY(-50%);
+    z-index: 0; /* Detrás de los botones */
+}
+
+#imagenFocoOn {
+    height: auto;
+    position: absolute;
+    top: -30%; /* Cambia la posición vertical */
+    left: 20%; /* Cambia la posición horizontal */
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Detrás de los botones */
+}
